@@ -29,3 +29,15 @@
   
   .delay-300 { animation-delay: 300ms; }
   .delay-500 { animation-delay: 500ms; }
+
+  @layer utilities {
+    .perspective {
+      perspective: 1000px;
+    }
+    
+    .bg-grid-pattern {
+      background-image: linear-gradient(to right, #ffffff05 1px, transparent 1px),
+                        linear-gradient(to bottom, #ffffff05 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  }
